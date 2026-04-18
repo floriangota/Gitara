@@ -1,0 +1,60 @@
+.school-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #000F38;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.school-loader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loader-icon {
+    font-size: 80px;
+    color: #bd2dca;
+    animation: bounce 1s infinite alternate ease-in-out;
+}
+
+.school-loader h2 {
+    font-size: 28px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.loader-bar {
+    width: 250px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loader-progress {
+    width: 40%;
+    height: 100%;
+    background: #bd2dca;
+    position: absolute;
+    left: -40%;
+    animation: load 2s infinite linear;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+@keyframes load {
+    0% { left: -40%; }
+    100% { left: 100%; }
+}
