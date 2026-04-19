@@ -38,25 +38,29 @@ nav ul li {
 }
 
 .theme-toggle {
-    background: none;
-    border: 2px solid #bd2dca;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(189, 45, 202, 0.4);
     border-radius: 50%;
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     color: #bd2dca;
-    font-size: 18px;
+    font-size: 20px;
     padding: 0;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(189, 45, 202, 0.15);
 }
 
 .theme-toggle:hover {
     background: #bd2dca;
     color: #fff;
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(15deg);
+    border-color: transparent;
+    box-shadow: 0 6px 16px rgba(189, 45, 202, 0.4);
 }
 
 .menu-icon {
@@ -119,11 +123,15 @@ nav ul li {
 }
 
 .dark .theme-toggle {
-    border-color: #bd2dca;
+    background: rgba(42, 42, 74, 0.7);
+    border-color: rgba(240, 192, 64, 0.4);
     color: #f0c040;
+    box-shadow: 0 4px 12px rgba(240, 192, 64, 0.15);
 }
 
 .dark .theme-toggle:hover {
-    background: #bd2dca;
-    color: #fff;
+    background: #f0c040;
+    color: #1a1a3e;
+    border-color: transparent;
+    box-shadow: 0 6px 16px rgba(240, 192, 64, 0.4);
 }
