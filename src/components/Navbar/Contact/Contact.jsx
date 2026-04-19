@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import './Contact.css'
 import bluee from '../../../assets/bluee.png'
-import darkarrow from '../../../assets/darkarrow.webp'
+import bluee from '../../../assets/bluee.png'
 import emailjs from '@emailjs/browser'
 import { ThemeContext } from '../../../ThemeContext'
 
@@ -150,7 +150,7 @@ const Contact = () => {
                 <span className="spinner"></span> Sending...
               </span>
             ) : (
-              <>Submit now!! <img src={darkarrow} alt="" /></>
+              <>Submit now!! <i className="bi bi-arrow-right"></i></>
             )}
           </button>
         </form>

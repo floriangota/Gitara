@@ -54,13 +54,13 @@ a {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
-.btn img {
-    width: 16px;
+.btn i {
+    font-size: 18px;
     margin-left: 10px;
     transition: transform 0.3s ease;
 }
 
-.btn:hover img {
+.btn:hover i {
     transform: translateX(4px);
 }
 
@@ -111,10 +111,6 @@ a {
     color: #fff;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
     border-color: rgba(255, 255, 255, 0.1);
-}
-
-.dark .btn img {
-    filter: invert(1);
 }
 
 .dark .btn.dark-btn {
