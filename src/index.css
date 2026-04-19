@@ -113,6 +113,10 @@ a {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
+.dark .btn img {
+    filter: brightness(0) invert(1);
+}
+
 .dark .btn.dark-btn {
     background: linear-gradient(135deg, rgba(42, 42, 74, 0.9), #1a1a3e);
     color: #ed8df6;
