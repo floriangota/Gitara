@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react'
 import './Contact.css'
 import bluee from '../../../assets/bluee.png'
-import bluee from '../../../assets/bluee.png'
 import emailjs from '@emailjs/browser'
 import { ThemeContext } from '../../../ThemeContext'
 
