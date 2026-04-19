@@ -358,11 +358,46 @@
 }
 
 .dark .review-btn {
-    border-color: #555;
-    color: #c0c0c0;
+    background: rgba(42, 42, 74, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark .edit-btn:hover {
+    border-color: transparent;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(189, 45, 202, 0.8), rgba(139, 24, 151, 0.8));
+    box-shadow: 0 4px 15px rgba(189, 45, 202, 0.4);
+    transform: translateY(-2px);
+}
+
+.dark .delete-btn:hover {
+    border-color: transparent;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.8), rgba(192, 57, 43, 0.8));
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+    transform: translateY(-2px);
 }
 
 .dark .no-reviews {
-    background: #2a2a4a;
-    color: #888;
+    background: rgba(42, 42, 74, 0.6);
+    color: #a0a0a0;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.dark .next-btn,
+.dark .back-btn {
+    background: linear-gradient(135deg, rgba(42, 42, 74, 0.9), #1a1a3e);
+    border: 1px solid rgba(189, 45, 202, 0.4);
+    box-shadow: 0 4px 15px rgba(189, 45, 202, 0.15);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark .next-btn:hover,
+.dark .back-btn:hover {
+    background: linear-gradient(135deg, #bd2dca, #8b1897);
+    box-shadow: 0 6px 20px rgba(189, 45, 202, 0.4);
+    transform: translateY(-50%) scale(1.1);
 }
