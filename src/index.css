@@ -114,7 +114,7 @@ a {
 }
 
 .dark .btn img {
-    filter: brightness(0) invert(1);
+    filter: invert(1);
 }
 
 .dark .btn.dark-btn {
