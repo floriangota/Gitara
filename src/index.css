@@ -11,6 +11,13 @@ html {
     scroll-behavior: smooth;
 }
 
+#programs, #campus, #testimonials, #contact {
+    scroll-margin-top: 260px;
+}
+#about {
+    scroll-margin-top: 150px;
+}
+
 body {
     background: #F5F5F5;
 }
