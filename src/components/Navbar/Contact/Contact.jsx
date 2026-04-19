@@ -80,10 +80,10 @@ const Contact = () => {
 
     try {
       const response = await emailjs.send(
-        'YOUR_SERVICE_ID',    // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID',   // Replace with your EmailJS template ID
+        'service_70yy36l',    // Replace with your EmailJS service ID
+        'template_42pr67g',   // Replace with your EmailJS template ID
         templateParams,
-        'YOUR_PUBLIC_KEY'     // Replace with your EmailJS public key
+        'RZ-q_90Ym__CT2MZy'     // Replace with your EmailJS public key
       );
 
       if (response.status === 200) {
